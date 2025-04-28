@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/base.css' %}">
+    <link rel="stylesheet" href="{%static 'css/home.css' %}">
+    <link rel="stylesheet" href="{%static '\css\login.css' %}">
+</head>
+<body>
+
+    <!-- HEADER -->
+  <!-- <header class="header">
+    <div class="container">
+      <div class="logo">🚗 CarRental</div>
+      <nav class="nav" id="nav">
+        <ul class="nav-links">
+          <li><a href="/rental/home/">Home</a></li>
+          
+<li><a href="/rental/about/">About</a></li>
+          <li><a href="/rental/contact/">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle">☰</button>
+      </nav>
+    </div>
+  </header> -->
+  {%include 'partials/header.html'%}
+  {% block homepage %}
+  <!-- MAIN CONTENT PLACEHOLDER -->
+  <div id="main1">
+    <video autoplay muted loop controls src="{%static 'static/img/blue-bmw-m3-g80.3840x2160.mp4'%}"></video>
+  </div>
+  <div class="main2">
+   
+    <div id="login">
+     
+      <form id="loginform" action="">
+         <h1>LOGIN</h1>
+        <input type="text" id='username' placeholder="username" required><br><br>
+        <input type="text" id='password' placeholder="password" required><br><br>
+        <button type="submit">LOGIN</button>
+      </form>
+    </div>
+  </div>
+  {%endblock%}
+  {%include 'partials/footer.html'%}
+  <!-- FOOTER -->
+  <!-- <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CarRental. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer> -->
+<script src="{%static 'js\base.js' %}"></script>   
+</body>
+</html>

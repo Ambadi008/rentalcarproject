@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+  
+    {%  block homepage %}
+    <div style="background-color: rgb(0, 61, 0); height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;">
+    <div class="contact-container" style="background-color: white;">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <form action="#" method="post">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+    
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+    
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+    
+              <button type="submit" onclick="click2()">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h2>Our Address</h2>
+            <p><strong>Car World HQ</strong></p>
+            <p>123 Speed Lane,<br>
+            Auto City, Wheels State - 456789</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Email: contact@carworld.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    {% endblock %}
+<script>
+    function click2(){
+        alert("Thank you for your response");
+    }
+</script>
+</body>

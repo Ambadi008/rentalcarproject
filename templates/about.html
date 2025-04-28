@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        {%  block homepage %}
+        <style>
+          .about-container {
+              max-width: 800px;
+              margin: auto;
+              background: white;
+              padding: 30px;
+              border-radius: 10px;
+              
+          
+              box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            }
+            
+            h1 {
+              color: #2c3e50;
+            }
+          
+      </style>
+  
+    <div style="background-color: rgb(161, 161, 32); height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;">
+    <div  class="about-container">
+        <h1>About Us</h1>
+        <p>Welcome to our car website – your one-stop destination for everything automotive. We’re passionate about cars and dedicated to helping you find the best vehicles, stay informed with the latest trends, and make smart car-related decisions.</p>
+    
+        <p>Whether you're looking to buy a new car, explore detailed reviews, compare models, or stay updated with the newest releases, our platform is designed to serve car enthusiasts and buyers alike.</p>
+    
+        <p>Our mission is simple: to provide reliable, up-to-date, and user-friendly content that helps you navigate the world of automobiles with ease.</p>
+    
+        <p>Thank you for visiting us. Drive safe and explore more!</p>
+      </div>
+    </div>
+    {% endblock %}
+</body>
